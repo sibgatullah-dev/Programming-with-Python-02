@@ -29,18 +29,19 @@ class Course:
         return value / len(self.students)
     
 
-s1 = Student('Tim',10,95)
-s2 = Student('Jim',11,75)
-s3 = Student('Lim',12,55)
-s4 = Student('Him',13,69)
-s5 = Student('Bim',14,80)
+if __name__ == '__main__':
+    s1 = Student('Tim',10,95)
+    s2 = Student('Jim',11,75)
+    s3 = Student('Lim',12,55)
+    s4 = Student('Him',13,69)
+    s5 = Student('Bim',14,80)
 
-course = Course('Science',3)
+    course = Course('Science',3)
 
-course.add_student(s1)
-course.add_student(s2)
-course.add_student(s3)
-course.add_student(s4)
-course.add_student(s5)
+    course.add_student(s1)
+    course.add_student(s2)
+    course.add_student(s3)
+    course.add_student(s4)
+    course.add_student(s5)
 
-print("The average grade of the students in the course is: ",course.average_grade())
+    print("The average grade of the students in the course is: ",course.average_grade())
